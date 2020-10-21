@@ -10,6 +10,9 @@
   --purple1: #23232e;
   --purple2: #17171f;
   --purple-light: #6868b6;
+  --nav-height: 70px;
+  --line-height: 1.7rem;
+  --footer-height: 360px;
 }
 * {
   box-sizing: border-box;
@@ -31,11 +34,13 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Product sans';
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
   font-size: 16px;
   background-color: var(--bg);
   color: var(--text);
   transition: background 0.5s ease-in-out, color 1s ease-in-out;
+  line-height: var(--line-height);
 }
 body::-webkit-scrollbar {
   width: 0.25rem;
@@ -47,6 +52,36 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: var(--text);
   border-radius: 10px;
+}
+button,
+[button] {
+  padding: 0.5rem;
+  border-radius: 0;
+  outline: none;
+  border: 1px solid var(--text);
+  background: transparent;
+  color: var(--text);
+  border-radius: 0;
+  font-weight: bold;
+}
+button:hover,
+[button]:hover {
+  cursor: pointer;
+  background: var(--text);
+  color: var(--bg);
+  transition: background 1s, color 1s;
+  box-shadow: 0 0 5px var(--text);
+}
+input,
+textarea {
+  background-color: var(--gray1);
+  padding: 0.7rem;
+  outline: none;
+  border: none;
+}
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 5px var(--text);
 }
 .marginv {
   margin-top: 1rem;
@@ -68,7 +103,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70px;
+  height: var(--nav-height);
   width: 100%;
   background: var(--bg-nav);
   color: var(--text);
@@ -79,14 +114,69 @@ a {
   flex: 1;
   justify-content: space-around;
 }
-.nav-item {
+.nav-item,
+.side-item {
+  margin: 2rem 0;
   cursor: pointer;
   transition: color 0.5s, transform 0.5s;
+  width: fit-content;
 }
-.nav-item:hover {
+.nav-item:hover,
+.side-item:hover {
   color: var(--purple-light);
   animation: text-rotate 0.5s;
   animation-fill-mode: forwards;
+}
+.side-item:hover {
+  color: var(--purple2);
+}
+.sidebar {
+  position: fixed;
+  z-index: 2;
+  top: var(--nav-height);
+  right: 0;
+  height: calc(100vh - var(--nav-height));
+  width: 0%;
+  background-color: var(--purple-light);
+  color: var(--purple1);
+  transition: width 0.5s;
+  overflow: hidden;
+}
+.sidebar-nav {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.burger-icon {
+  display: none;
+  padding: 1rem;
+  z-index: 5;
+}
+.burger-icon:hover {
+  cursor: pointer;
+}
+.burger-bar {
+  width: 2.5rem;
+  height: calc(0.5rem / 3);
+  margin: 0.5rem 0;
+  background-color: var(--purple-light);
+}
+.burger-active {
+  z-index: 3;
+}
+.burger-active .burger-bar:nth-child(1) {
+  animation: bar1 0.5s forwards;
+}
+.burger-active .burger-bar:nth-child(2) {
+  opacity: 0;
+  transition: opacity 0.5s, background-color 0.5s;
+}
+.burger-active .burger-bar:nth-child(3) {
+  animation: bar3 0.5s forwards;
 }
 header {
   padding: 1rem;
@@ -144,13 +234,14 @@ section {
   flex: 9;
   background-color: var(--purple0);
   overflow-x: hidden;
-  animation: progress 1s;
+  animation: progress 1.5s;
 }
 .percentage {
   flex: 1;
   text-align: right;
 }
 .progress-value {
+  padding: 0 0.2rem;
   color: var(--purple2);
   height: 100%;
   z-index: 1;
@@ -159,17 +250,28 @@ section {
 .not-footer {
   margin: 0;
   padding: 0;
-  min-height: calc(100vh - 320px);
+  min-height: calc(100vh - var(--footer-height));
 }
 footer {
   text-align: center;
   color: whitesmoke;
-  height: 320px;
+  height: var(--footer-height);
   background: var(--bg-nav);
   color: var(--text);
+  clip-path: polygon(0 100%, 100% 100%, 100% 10%, 0 0%);
 }
+form#feedback-form {
+  width: 80%;
+  margin: auto;
+}
+form#feedback-form input,
+textarea#feedback-text {
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+}
+
 form#form-subscribe input {
-  padding: 0.7rem;
   border: none;
   outline: none;
   font-weight: bold;
@@ -186,10 +288,8 @@ form#form-subscribe input {
 #socials > div {
   margin: 0 0.5rem 0 0.5rem;
 }
-#socials #subscribe-btn:hover {
-  cursor: pointer;
-  background-color: var(--purple2);
-  color: var(--text);
+#socials img {
+  width: 3rem;
 }
 /*  ANIMATIONS */
 @keyframes color-rotate {
@@ -256,6 +356,34 @@ form#form-subscribe input {
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes bar1 {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0.65rem) rotate(45deg);
+  }
+}
+@keyframes bar3 {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-0.65rem) rotate(-45deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: flex-end;
+  }
+  .navbar-nav {
+    display: none;
+  }
+  .burger-icon {
+    display: block;
   }
 }
 

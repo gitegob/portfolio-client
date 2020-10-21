@@ -18,7 +18,22 @@
           <li class="nav-item"><a href="#contact">Hit Me Up</a></li>
           <li class="nav-item"><a href="#subscribe">Subscribe</a></li>
         </ul>
+        <div class="burger-icon">
+          <div class="burger-bar"></div>
+          <div class="burger-bar"></div>
+          <div class="burger-bar"></div>
+        </div>
       </nav>
+      <div class="sidebar">
+        <ul class="sidebar-nav">
+          <li class="side-item"><a href="#home">Home</a></li>
+          <li class="side-item"><a href="#skills">What I Code</a></li>
+          <li class="side-item"><a href="#projects">Works</a></li>
+          <li class="side-item"><a href="#blogs">Blog</a></li>
+          <li class="side-item"><a href="#contact">Hit Me Up</a></li>
+          <li class="side-item"><a href="#subscribe">Subscribe</a></li>
+        </ul>
+      </div>
       <header>
         <!-- <img class="logo" src="logo.png" alt="logo" /> -->
         <svg width="582" class="logo" height="212" viewBox="0 0 582 212" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -145,40 +160,39 @@
         </section>
         <section class="padding" id="contact">
           <h1 class="section-title">Hit Me Up</h1>
-          Are you all right? No. He's making the tie in the cab as they're flying up Madison. He finally gets there. He runs up the steps into the
-          church. The wedding is on. And he says, "Watermelon? I thought you said Guatemalan. Why would I marry a watermelon?" Is that a bee joke?
-          Most bee jobs are small ones. But bees know that every small job, if it's done well means a lot. But choose carefully because you'll stay in
-          the job you pick for the rest of your life. Our honey is being brazenly stolen on a massive scale! This is worse than anything bears have
-          done! I intend to do something. Oh, Barry, stop. Who told you humans are taking our honey? That's a rumor. Do these look like rumors? That's
-          a conspiracy theory. These are obviously doctored photos.
-          <br />
-          <br />We try not to sting. It's usually fatal for us. So you have to watch your temper. Very carefully. You kick a wall, take a walk, write
-          an angry letter and throw it out. Work through it like any emotion. How come you don't fly everywhere? It's exhausting. Why don't you run
-          everywhere? It's faster. Yeah, OK, I see, I see. All right, your turn. TiVo. You can just freeze live TV? That's insane! You don't have
-          that? We have Hivo, but it's a disease. It's a horrible, horrible disease. Never thought I'd make it. Three days grade school, three days
-          high school. Those were awkward. Three days college. I'm glad I took a day and hitchhiked around the hive. You did come back different.
-          Tonight we're talking to Barry Benson. Did you ever think, "I'm a kid from the hive. I can't do this"? Bees have never been afraid to change
-          the world. What about Bee Columbus? Bee Gandhi? Bejesus? Where I'm from, we'd never sue humans. We were thinking of stickball or candy
-          stores.
+          <form id="feedback-form">
+            <input type="email" name="email" id="feedback-email" placeholder="Your Email..." />
+            <textarea name="feedback" id="feedback-text" cols="30" rows="10" placeholder="Request? Suggestion? Feedback? Talk to me..."></textarea>
+            <input type="submit" id="feedback-submit" value="Send" button />
+          </form>
         </section>
       </main>
     </div>
+
     <footer class="padding">
       <secion class="padding" id="subscribe">
-        <h3 class="section-title">Get new blog posts straight to your email</h1>
-          <form id="form-subscribe">
-            <input type="text" placeholder="Your Email...">
-            <input type="submit" id="subscribe-btn" value="Subscribe">
-          </form>
+        <h3 class="section-title">Get new blog posts straight to your email</h3>
+        <form id="form-subscribe">
+          <input type="text" placeholder="Your Email..." />
+          <button type="submit" id="submit-subscribe">Subscribe</button>
+        </form>
       </secion>
       <secion class="padding" id="social-section">
-        <h3 class="section-title">Follow Me</h1>
-          <div id="socials">
-            <div class="linkedin"><a href="https://linkedin.com/in/brian-gitego"><img src="./images/linkedin2x.png" alt="LinkedIn"></a></div>
-            <div class="twitter"><a href="https://twitter.com/gbrian98"><img src="./images/twitter2x.png" alt="Twitter"></a></div>
-            <div class="facebook"><a href="https://facebook.com/brian.gitego"><img src="./images/facebook2x.png" alt="Facebook"></a></div>
-            <div class="instagram"><a href="https://instagram.com/gbrian__"><img src="./images/instagram2x.png" alt="Instagram"></a></div>
+        <h3 class="section-title">Follow Me</h3>
+        <div id="socials">
+          <div class="linkedin">
+            <a href="https://linkedin.com/in/brian-gitego"><img src="./images/linkedin2x.png" alt="LinkedIn" /></a>
           </div>
+          <div class="twitter">
+            <a href="https://twitter.com/gbrian98"><img src="./images/twitter2x.png" alt="Twitter" /></a>
+          </div>
+          <div class="facebook">
+            <a href="https://facebook.com/brian.gitego"><img src="./images/facebook2x.png" alt="Facebook" /></a>
+          </div>
+          <div class="instagram">
+            <a href="https://instagram.com/gbrian__"><img src="./images/instagram2x.png" alt="Instagram" /></a>
+          </div>
+        </div>
       </secion>
     </footer>
   </body>

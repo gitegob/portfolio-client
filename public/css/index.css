@@ -69,7 +69,7 @@ button:hover,
   cursor: pointer;
   background: var(--text);
   color: var(--bg);
-  transition: background 1s, color 1s;
+  transition: background 0.5s, color 0.5s;
   box-shadow: 0 0 5px var(--text);
 }
 input,
@@ -87,8 +87,17 @@ textarea:focus {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.margin {
+  margin: 1rem;
+}
 .padding {
   padding: 1rem;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 ul {
   list-style: none;
@@ -107,6 +116,7 @@ a {
   width: 100%;
   background: var(--bg-nav);
   color: var(--text);
+  z-index: 10;
 }
 .navbar-nav {
   display: flex;
@@ -247,6 +257,73 @@ section {
   z-index: 1;
   background-color: var(--purple-light);
 }
+
+/* PROJECTS */
+
+#projects-container {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  padding: 1rem;
+}
+.project {
+  flex: 0 0 auto;
+  position: relative;
+  margin: 1rem;
+  background: transparent;
+  max-width: 500px;
+}
+.project:hover .project-overlay {
+  opacity: 0.9;
+}
+.project:hover .project-img {
+  width: 100%;
+  height: 100%;
+}
+.project-img-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-img {
+  width: 95%;
+  height: 95%;
+  transition: width 0.3s, height 0.3s;
+}
+.project-overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: normal;
+  font-size: 0.7rem;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+/* BlogPosts */
+.blogpost {
+  box-shadow: 0 0 5px var(--gray1);
+}
+.blog-body {
+  max-height: 200px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
 .not-footer {
   margin: 0;
   padding: 0;
@@ -385,10 +462,16 @@ form#form-subscribe input {
   .burger-icon {
     display: block;
   }
+  .project {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 600px) {
   .logo {
     width: 50%;
+  }
+  .project {
+    max-width: 250px;
   }
 }

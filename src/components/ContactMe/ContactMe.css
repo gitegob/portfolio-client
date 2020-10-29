@@ -1,0 +1,10 @@
+form#contact-form {
+  width: 80%;
+  margin: auto;
+}
+form#contact-form input,
+textarea#contact-text {
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+}

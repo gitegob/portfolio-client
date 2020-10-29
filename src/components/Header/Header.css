@@ -1,0 +1,36 @@
+header {
+  padding: 1rem;
+  padding-bottom: 3.5rem;
+  min-height: calc(100vh - 70px);
+  text-align: center;
+  background: var(--bg-nav);
+  clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+}
+.logo {
+  width: 20%;
+  filter: hue-rotate(256deg);
+}
+.logo:hover {
+  animation: color-rotate 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes color-rotate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    width: 35%;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 50%;
+  }
+}

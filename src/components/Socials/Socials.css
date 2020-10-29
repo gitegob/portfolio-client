@@ -1,0 +1,10 @@
+#socials {
+  display: flex;
+  justify-content: center;
+}
+#socials > div {
+  margin: 0 0.5rem 0 0.5rem;
+}
+#socials img {
+  width: 3rem;
+}

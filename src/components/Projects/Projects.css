@@ -1,0 +1,7 @@
+#projects-container {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  padding: 1rem;
+}

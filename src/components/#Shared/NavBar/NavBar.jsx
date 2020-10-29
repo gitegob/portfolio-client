@@ -1,4 +1,6 @@
 import React from 'react';
+import Burger from '../Burger/Burger';
+import './NavBar.css';
 
 const NavBar = () => {
   return (
@@ -24,11 +26,7 @@ const NavBar = () => {
             <a href="#subscribe">Subscribe</a>
           </li>
         </ul>
-        <div className="burger-icon">
-          <div className="burger-bar"></div>
-          <div className="burger-bar"></div>
-          <div className="burger-bar"></div>
-        </div>
+        <Burger />
       </nav>
     </>
   );

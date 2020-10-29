@@ -1,0 +1,24 @@
+.blogpost {
+  background: var(--bg-three);
+  margin: 2rem;
+}
+.blog-body {
+  max-height: 200px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.reactions {
+  display: flex;
+  width: 20%;
+}
+.reactions > div {
+  flex: 1;
+}
+#btna-more {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}

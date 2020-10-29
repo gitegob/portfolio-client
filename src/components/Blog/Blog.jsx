@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import './Blog.css';
+import Icon from '../#Shared/Icon/Icon';
 
 const Blog = () => {
   return (
@@ -23,13 +25,25 @@ const Blog = () => {
           the world. What about Bee Columbus? Bee Gandhi? Bejesus? Where I'm from, we'd never sue humans. We were thinking of stickball or candy
           stores.
         </p>
-        <i className="fas fa-eye">View</i>
-        <i className="far fa-heart">Like</i>
-        <i className="far fa-comment">Comment</i>
+        <div className="reactions">
+          <div>
+            <Icon solid name="fa-eye" />
+            <div className="text-center">50</div>
+          </div>
+          <div>
+            <Icon name="fa-heart" />
+            <div className="text-center">50</div>
+          </div>
+          <div>
+            <Icon name="fa-comment" />
+            <div className="text-center">50</div>
+          </div>
+        </div>
+
         <div className="blog-date text-right">Posted on 27 Dec 2019</div>
       </div>
     </>
   );
-}
+};
 
-export default Blog
+export default Blog;

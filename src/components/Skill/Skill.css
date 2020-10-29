@@ -1,0 +1,28 @@
+.skill {
+  display: flex;
+}
+.progress {
+  flex: 9;
+  background-color: var(--bg-two);
+  overflow-x: hidden;
+  animation: progress 1.5s;
+}
+.percentage {
+  flex: 1;
+  text-align: right;
+}
+.progress-value {
+  padding: 0 0.2rem;
+  color: var(--purple2);
+  height: 100%;
+  z-index: 1;
+  background-color: var(--purple-light);
+}
+@keyframes progress {
+  from {
+    flex: 0;
+  }
+  to {
+    flex: 9;
+  }
+}

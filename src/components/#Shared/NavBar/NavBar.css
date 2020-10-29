@@ -1,0 +1,38 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--nav-height);
+  width: 100%;
+  background: var(--bg-nav);
+  color: var(--text);
+  z-index: 10;
+}
+.navbar-nav {
+  display: flex;
+  text-align: center;
+  flex: 1;
+  justify-content: space-around;
+}
+.nav-item {
+  margin: 2rem 0;
+  cursor: pointer;
+  transition: color 0.5s, transform 0.5s;
+  width: fit-content;
+}
+.nav-item:hover {
+  color: var(--color-hover);
+  animation: text-rotate 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: flex-end;
+  }
+  .navbar-nav {
+    display: none;
+  }
+}

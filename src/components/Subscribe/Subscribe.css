@@ -1,0 +1,10 @@
+form#form-subscribe input {
+  outline: none;
+  font-weight: bold;
+  background-color: transparent;
+  color: var(--text);
+  margin: 1rem;
+}
+#form-subscribe input::placeholder {
+  color: var(--gray4);
+}

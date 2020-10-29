@@ -1,0 +1,14 @@
+span {
+  text-align: center;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 50%;
+}
+span:hover {
+  cursor: pointer;
+  transition: background 0.2s;
+  background: var(--gray5);
+}
+span:active {
+  background: var(--gray4);
+}

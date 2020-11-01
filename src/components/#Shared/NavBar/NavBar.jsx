@@ -1,5 +1,6 @@
 import React from 'react';
 import Burger from '../Burger/Burger';
+import ToggleTheme from '../ToggleTheme/ToggleTheme';
 import './NavBar.css';
 
 const NavBar = () => {
@@ -24,6 +25,9 @@ const NavBar = () => {
           </li>
           <li className="nav-item">
             <a href="#subscribe">Subscribe</a>
+          </li>
+          <li className="nav-item">
+            <ToggleTheme />
           </li>
         </ul>
         <Burger />

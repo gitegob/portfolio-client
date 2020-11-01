@@ -1,20 +1,23 @@
-import React from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect } from 'react';
 import './Skills.css';
+import { useDispatch, useSelector } from 'react-redux';
 import Skill from '../Skill/Skill';
+import { getSkills } from '../../store/actions/skills';
 
 const Skills = () => {
+  const { skills } = useSelector((store) => store.skills);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getSkills());
+  }, []);
   return (
     <section className="padding" id="skills">
       <h1 className="section-title">Languages & Technologies.</h1>
       <div className="skills-container">
-        <Skill skill={{ name: 'HTML', percentage: '95%' }} />
-        <Skill skill={{ name: 'CSS', percentage: '90%' }} />
-        <Skill skill={{ name: 'Javascript', percentage: '90%' }} />
-        <Skill skill={{ name: 'ReactJS + Redux/Context', percentage: '85%' }} />
-        <Skill skill={{ name: 'Redux', percentage: '75%' }} />
-        <Skill skill={{ name: 'NodeJS + Express', percentage: '90%' }} />
-        <Skill skill={{ name: 'PostgreSQL + Sequelize', percentage: '80%' }} />
-        <Skill skill={{ name: 'MongoDB + Mongoose', percentage: '75%' }} />
+        {skills.map((skill) => (
+          <Skill skill={skill} key={skill.id} />
+        ))}
       </div>
     </section>
   );

@@ -2,7 +2,6 @@ import React, { createContext, useState } from 'react';
 
 const initState = {
   burgerActive: false,
-  theme: localStorage.getItem('theme') || 'dark'
 };
 export const GlobalState = createContext();
 

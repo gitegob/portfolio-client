@@ -20,13 +20,12 @@
   font-size: 1.2rem;
 }
 .side-item {
-  margin: 2rem 0;
+  margin: 1rem 0;
   cursor: pointer;
   transition: color 0.5s, transform 0.5s;
   width: fit-content;
 }
 .side-item:hover {
-  color: var(--color-hover);
   animation: text-rotate 0.5s;
   animation-fill-mode: forwards;
 }

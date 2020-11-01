@@ -1,28 +1,47 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { GlobalState } from '../../../context/global/State';
+import ToggleTheme from '../ToggleTheme/ToggleTheme';
 import './SideNav.css';
 
 const SideNav = () => {
+  const { state, setState } = useContext(GlobalState);
+  const itemClicked = () => setState({ ...state, burgerActive: !state.burgerActive });
   return (
     <>
-      <div className="sidebar">
+      <div className="sidebar" style={{ width: state.burgerActive ? '100%' : '0' }}>
         <ul className="sidebar-nav">
           <li className="side-item">
-            <a href="#home">Home</a>
+            <a href="#home" onClick={itemClicked}>
+              Home
+            </a>
           </li>
           <li className="side-item">
-            <a href="#skills">What I Code</a>
+            <a href="#skills" onClick={itemClicked}>
+              What I Code
+            </a>
           </li>
           <li className="side-item">
-            <a href="#projects">Works</a>
+            <a href="#projects" onClick={itemClicked}>
+              Works
+            </a>
           </li>
           <li className="side-item">
-            <a href="#blogs">Blog</a>
+            <a href="#blogs" onClick={itemClicked}>
+              Blog
+            </a>
           </li>
           <li className="side-item">
-            <a href="#contact">Hit Me Up</a>
+            <a href="#contact" onClick={itemClicked}>
+              Hit Me Up
+            </a>
           </li>
           <li className="side-item">
-            <a href="#subscribe">Subscribe</a>
+            <a href="#subscribe" onClick={itemClicked}>
+              Subscribe
+            </a>
+          </li>
+          <li className="side-item">
+            <ToggleTheme />
           </li>
         </ul>
       </div>

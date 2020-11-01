@@ -13,6 +13,13 @@
   --nav-height: 70px;
   --line-height: 1.7rem;
   --footer-height: 360px;
+
+  --bg: var(--purple1);
+  --bg-two: var(--purple0);
+  --bg-three: var(--bg-two);
+  --color-hover: var(--purple-light);
+  --bg-nav: linear-gradient(to right, var(--purple1), var(--purple2), var(--purple1));
+  --text: var(--gray2);
 }
 
 code {
@@ -27,20 +34,12 @@ html {
 .light {
   --bg: var(--gray1);
   --bg-two: var(--gray4);
-  --bg-three: var(--gray3);
+  --bg-three: var(--gray2);
   --color-hover: var(--purple0);
   --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3), var(--gray1));
   --text: var(--gray6);
 }
 
-.dark {
-  --bg: var(--purple1);
-  --bg-two: var(--purple0);
-  --bg-three: var(--bg-two);
-  --color-hover: var(--purple-light);
-  --bg-nav: linear-gradient(to right, var(--purple1), var(--purple2), var(--purple1));
-  --text: var(--gray2);
-}
 body {
   margin: 0;
   padding: 0;

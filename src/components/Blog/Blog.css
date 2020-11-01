@@ -10,15 +10,15 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
+.blog-bottom {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
 .reactions {
   display: flex;
   width: 20%;
 }
 .reactions > div {
   flex: 1;
-}
-#btna-more {
-  display: block;
-  width: 90%;
-  margin: 0 auto;
 }

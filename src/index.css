@@ -36,7 +36,7 @@ html {
   --bg-two: var(--gray4);
   --bg-three: var(--gray2);
   --color-hover: var(--purple0);
-  --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3), var(--gray1));
+  --bg-nav:  var(--gray2);
   --text: var(--gray6);
 }
 

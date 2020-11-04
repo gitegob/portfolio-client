@@ -30,6 +30,9 @@ header {
 }
 
 @media (max-width: 600px) {
+  header {
+  clip-path:none;
+  }
   .logo {
     width: 50%;
   }

@@ -8,6 +8,7 @@ const Footer = () => {
     <footer className="padding">
       <Subscribe />
       <Socials />
+      <div className="copyright text-center">&copy;2020 Brian Gitego</div>
     </footer>
   );
 };

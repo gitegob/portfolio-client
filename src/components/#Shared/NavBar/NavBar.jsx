@@ -18,13 +18,7 @@ const NavBar = () => {
             <a href="#projects">Works</a>
           </li>
           <li className="nav-item">
-            <a href="#blogs">Blog</a>
-          </li>
-          <li className="nav-item">
             <a href="#contact">Hit Me Up</a>
-          </li>
-          <li className="nav-item">
-            <a href="#subscribe">Subscribe</a>
           </li>
           <li className="nav-item">
             <ToggleTheme />

@@ -1,11 +1,11 @@
 .project {
-  flex: 0 0 auto;
+  width: 75%;
   position: relative;
-  margin: 1rem;
+  margin: 1.5rem auto;
   background: transparent;
-  max-width: 500px;
 }
 .project:hover .project-overlay {
+  box-shadow: 0 0 10px var(--text);
   opacity: 0.9;
 }
 .project:hover .project-img {
@@ -40,16 +40,16 @@
   width: 100%;
   background-color: var(--bg);
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s, box-shadow 0.5s;
 }
 @media (max-width: 768px) {
   .project {
-    max-width: 300px;
+    width: 85%;
   }
 }
 
 @media (max-width: 600px) {
-  .project {
-    max-width: 250px;
+  .project-overlay {
+    font-size: 0.6rem;
   }
 }

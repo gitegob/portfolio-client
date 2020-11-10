@@ -1,7 +1,6 @@
 import React from 'react';
 import NavBar from '../components/#Shared/NavBar/NavBar';
 import SideNav from '../components/#Shared/SideNav/SideNav';
-import Blogs from '../components/Blogs/Blogs';
 import ContactMe from '../components/ContactMe/ContactMe';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
@@ -18,7 +17,6 @@ const Index = () => {
         <main>
           <Skills />
           <Projects />
-          <Blogs />
           <ContactMe />
         </main>
       </div>

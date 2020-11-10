@@ -1,7 +1,5 @@
 #projects-container {
-  display: flex;
-  overflow-x: auto;
-  flex-wrap: nowrap;
-  scroll-behavior: smooth;
+  width: 100%;
+  margin: auto;
   padding: 1rem;
 }

@@ -1,6 +1,6 @@
 import Axios from 'axios';
 import { api } from "../../config/constants";
-import actionTypes from "./types";
+import actionTypes from "./actionTypes";
 
 export const getProjects = () => async (dispatch, getState) => {
   const response = await Axios.get(api.guest.getProjects);

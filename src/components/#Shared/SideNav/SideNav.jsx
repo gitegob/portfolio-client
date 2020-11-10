@@ -26,18 +26,8 @@ const SideNav = () => {
             </a>
           </li>
           <li className="side-item">
-            <a href="#blogs" onClick={itemClicked}>
-              Blog
-            </a>
-          </li>
-          <li className="side-item">
             <a href="#contact" onClick={itemClicked}>
               Hit Me Up
-            </a>
-          </li>
-          <li className="side-item">
-            <a href="#subscribe" onClick={itemClicked}>
-              Subscribe
             </a>
           </li>
           <li className="side-item">

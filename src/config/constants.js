@@ -10,6 +10,7 @@ export const api = {
     commentOnBlog: (blogId) => `${url.API}/guest/blogs/${blogId}/comments`,
     blogViews: (blogId) => `${url.API}/guest/blogs/${blogId}/views`,
     subscribe: `${url.API}/guest/subscribe`,
+    postContact: `${url.API}/guest/contact`
   },
   admin: {
     login: `${url.API}/admin/login`,

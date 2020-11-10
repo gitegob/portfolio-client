@@ -1,2 +1,2 @@
-# portfolio-ui
-The Front-End files for my Portfolio Website
+# portfolio-client
+The client side for my portfolio website.

@@ -1,14 +1,18 @@
-import React, { useContext } from 'react';
-import { GlobalState } from '../../../context/global/State';
-import ToggleTheme from '../ToggleTheme/ToggleTheme';
-import './SideNav.css';
+import React, { useContext } from "react";
+import { GlobalState } from "../../../context/global/State";
+import ToggleTheme from "../ToggleTheme/ToggleTheme";
+import "./SideNav.css";
 
 const SideNav = () => {
   const { state, setState } = useContext(GlobalState);
-  const itemClicked = () => setState({ ...state, burgerActive: !state.burgerActive });
+  const itemClicked = () =>
+    setState({ ...state, burgerActive: !state.burgerActive });
   return (
     <>
-      <div className="sidebar" style={{ width: state.burgerActive ? '100%' : '0' }}>
+      <div
+        className="sidebar"
+        style={{ width: state.burgerActive ? "100%" : "0" }}
+      >
         <ul className="sidebar-nav">
           <li className="side-item">
             <a href="#home" onClick={itemClicked}>
@@ -17,7 +21,7 @@ const SideNav = () => {
           </li>
           <li className="side-item">
             <a href="#skills" onClick={itemClicked}>
-              What I Code
+              Skills
             </a>
           </li>
           <li className="side-item">
@@ -27,7 +31,12 @@ const SideNav = () => {
           </li>
           <li className="side-item">
             <a href="#contact" onClick={itemClicked}>
-              Hit Me Up
+              Hit me up
+            </a>
+          </li>
+          <li className="side-item">
+            <a href="docs/resume.pdf" download>
+              My resume
             </a>
           </li>
           <li className="side-item">

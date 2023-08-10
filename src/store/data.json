@@ -1,0 +1,63 @@
+{
+    "skills": [
+        {
+            "name": "HTML",
+            "percentage": "90%"
+        },
+        {
+            "name": "CSS",
+            "percentage": "80%"
+        },
+        {
+            "name": "JavaScript",
+            "percentage": "70%"
+        },
+        {
+            "name": "PHP",
+            "percentage": "60%"
+        },
+        {
+            "name": "MySQL",
+            "percentage": "50%"
+        },
+        {
+            "name": "Java",
+            "percentage": "40%"
+        },
+        {
+            "name": "Python",
+            "percentage": "30%"
+        },
+        {
+            "name": "C",
+            "percentage": "20%"
+        },
+        {
+            "name": "C++",
+            "percentage": "10%"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Uzuri K&Y",
+            "description": "UZURI K&Y is a footwear brand inspired by African culture with a contemporary touch and a recycled tire sole. I worked on it's E-commerce API.",
+            "image": "images/projs/uzuri.png",
+            "frontend": null,
+            "backend": null
+        },
+        {
+            "name": "OX Rwanda Dashboard",
+            "description": "A system to help OX Rwanda to manage orders, sales and trucks. It also helps to generate reports, graphs and analytics for all the data.",
+            "image": "images/projs/ox_rwanda.png",
+            "frontend": null,
+            "backend": null
+        },
+        {
+            "name": "DBI Trust Seal certification system",
+            "description": "A System to manage Trust Seals to offer to credible e-commerce companies and serve as a credible mark for customer assurance.",
+            "image": "images/projs/tss.png",
+            "frontend": null,
+            "backend": null
+        }
+    ]
+}

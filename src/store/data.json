@@ -1,0 +1,103 @@
+{
+    "skills": [
+        {
+            "name": "JavaScript/Typescript",
+            "percentage": null
+        },
+        {
+            "name": "Kotlin",
+            "percentage": null
+        },
+        {
+            "name": "C#",
+            "percentage": null
+        },
+        {
+            "name": "Java",
+            "percentage": null
+        },
+        {
+            "name": "Python",
+            "percentage": null
+        },
+        {
+            "name": "NestJS",
+            "percentage": null
+        },
+        {
+            "name": "Spring boot",
+            "percentage": null
+        },
+        {
+            "name": ".NET Core",
+            "percentage": null
+        },
+        {
+            "name": "ExpressJS",
+            "percentage": null
+        },
+        {
+            "name": "Docker",
+            "percentage": null
+        },
+        {
+            "name": "MongoDB",
+            "percentage": null
+        },
+        {
+            "name": "Stripe",
+            "percentage": null
+        },
+        {
+            "name": "Azure Functions",
+            "percentage": null
+        },
+        {
+            "name": "PostgreSQL",
+            "percentage": null
+        },
+        {
+            "name": "Typeorm",
+            "percentage": null
+        },
+        {
+            "name": "Spring Data JPA",
+            "percentage": null
+        },
+        {
+            "name": "Microsoft Entity Framework",
+            "percentage": null
+        },
+        {
+            "name": "Azure Cloud Services",
+            "percentage": null
+        },
+        {
+            "name": "Gitlab CI CD",
+            "percentage": null
+        }
+    ],
+    "projects": [
+        {
+            "name": "Uzuri K&Y",
+            "description": "UZURI K&Y is a footwear brand inspired by African culture with a contemporary touch and a recycled tire sole. I worked on it's E-commerce API.",
+            "image": "images/projs/uzuri.jpeg",
+            "frontend": null,
+            "backend": null
+        },
+        {
+            "name": "OX Rwanda Dashboard",
+            "description": "A system to help OX Rwanda to manage orders, sales and trucks. It also helps to generate reports, graphs and analytics for all the data.",
+            "image": "images/projs/ox_rwanda.jpeg",
+            "frontend": null,
+            "backend": null
+        },
+        {
+            "name": "DBI Trust Seal certification system",
+            "description": "A System to manage Trust Seals to offer to credible e-commerce companies and serve as a credible mark for customer assurance.",
+            "image": "images/projs/tss.jpeg",
+            "frontend": null,
+            "backend": null
+        }
+    ]
+}

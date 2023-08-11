@@ -1,22 +1,13 @@
 .skill {
-  display: flex;
-}
-.progress {
-  flex: 9;
-  background-color: var(--bg-two);
-  overflow-x: hidden;
-  animation: progress 1.5s;
-}
-.percentage {
-  flex: 1;
-  text-align: right;
+  margin: 8px;
 }
 .progress-value {
-  padding: 0 0.2rem;
+  padding: 8px;
   color: var(--purple2);
   height: 100%;
   z-index: 1;
   background-color: var(--purple-light);
+  border-radius: 0.2rem;
 }
 @keyframes progress {
   from {

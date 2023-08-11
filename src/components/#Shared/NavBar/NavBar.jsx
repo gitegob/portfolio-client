@@ -1,7 +1,7 @@
-import React from 'react';
-import Burger from '../Burger/Burger';
-import ToggleTheme from '../ToggleTheme/ToggleTheme';
-import './NavBar.css';
+import React from "react";
+import Burger from "../Burger/Burger";
+import ToggleTheme from "../ToggleTheme/ToggleTheme";
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
@@ -12,13 +12,18 @@ const NavBar = () => {
             <a href="#home">Home</a>
           </li>
           <li className="nav-item">
-            <a href="#skills">What I Code</a>
+            <a href="#skills">Skills</a>
           </li>
           <li className="nav-item">
             <a href="#projects">Works</a>
           </li>
           <li className="nav-item">
-            <a href="#contact">Hit Me Up</a>
+            <a href="#contact">Hit me up</a>
+          </li>
+          <li className="nav-item">
+            <a href="docs/Brian_Gitego_Resume.pdf" download>
+              My resume
+            </a>
           </li>
           <li className="nav-item">
             <ToggleTheme />

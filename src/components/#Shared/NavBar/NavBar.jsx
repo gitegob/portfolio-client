@@ -21,7 +21,7 @@ const NavBar = () => {
             <a href="#contact">Hit me up</a>
           </li>
           <li className="nav-item">
-            <a href="docs/resume.pdf" download>
+            <a href="docs/Brian_Gitego_Resume.pdf" download>
               My resume
             </a>
           </li>

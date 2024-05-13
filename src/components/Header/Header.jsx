@@ -30,7 +30,7 @@ const Header = () => {
         </defs>
       </svg>
       <h1>Brian Gitego</h1>
-      <p>FullStack Developer</p>
+      <p>Software Engineer</p>
       <p>Kigali, Rwanda</p>
       <br />
       <ArrowsDown />
